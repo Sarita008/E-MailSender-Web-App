@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    background-image: url("./Img.png") ;
+    background-size: cover;
+}
+
+.container{
+   display: flex;
+   flex-direction: column;
+   width: 100vw;
+   height: 100vh;
+}
+.div1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 90%;
+}
+
+.sub_div1{
+  width: 60%; 
+  text-align: center;
+  padding-top: 200px;
+}
+h1{
+  font-size: 80px;
+  padding: 30px 0 20px 20px;
+  /* color:  purple; */
+  /* color: violet; */
+  color: #0E0C3F;
+}
+h1:hover {
+  color:fuchsia;
+}
+
+p{
+  font-size: 25px;
+  color: white;
+  padding: 20px 0 0 20px;
+  line-height: 1.5;
+}
+.sub_div2 {
+    margin-top: 170px;
+    width: 40%;
+  }
+.sub_div2 form{
+  width:60%;
+  margin-left: 17rem;
+}
+.sub_div2 input{
+  padding: 20px;
+  margin:10px ;
+  width: 20em;
+  border: 2px solid #af5c4c ;
+  border-radius: 1.6rem;
+  outline: none;
+  box-shadow: 0 5px 7px 5px #d6ec4831, 0 3px 5px 4px #63ec4817;
+} 
+
+.sub_div2 textarea{
+    height: 20vh;
+    padding: 20px;
+    margin:15px ;
+    margin-bottom: 20px;
+    width: 20em;
+    border: 2px solid #af5c4c ;
+    border-radius: 1.6rem;
+    outline: none;
+    box-shadow: 0 5px 7px 5px #d6ec4831, 0 3px 5px 4px #63ec4817;
+  }
+
+   button {
+    font-family: inherit;
+    font-size: 20px;
+    background: royalblue;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    margin-left: 2em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+    box-shadow: 0 5px 7px 5px #d6ec4831, 0 3px 5px 4px #63ec4817;
+  }
+  
+  button span {
+    display: block;
+    margin-left: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  button:hover {
+    box-shadow: 0 10px 15px 3px #ec48484f, 0 5px 7px 3px #ec484817;
+  }
+  
+  button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+  }
+  
+  button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  }
+  
+  button:hover span {
+    transform: translateX(5em);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
+
+.status-message{    
+  font-size: large;
+  top: 143px;
+  position: absolute;
+  right: 65px;
+}
+
+.div2{
+  width: 100%;
+  text-align: center;
+}
+ 
